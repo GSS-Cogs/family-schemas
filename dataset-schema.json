@@ -5,6 +5,12 @@
   "description": "Info about a dataset / transformation",
   "type": "object",
   "properties": {
+    "$schema": {
+      "description": "The schema/version this file uses.",
+      "type": "string",
+      "format": "uri",
+      "const": "http://gss-cogs.github.io/family-schemas/dataset-schema.json"
+    },
     "title": {
       "description": "The dataset title",
       "type": "string"
@@ -109,65 +115,47 @@
             "description": "A column name to component mapping",
             "oneOf": [
               {
-                "description": "Definition of this dimension",
-                "type": "string"
-              },
-              {
+                "$ref": "#/definitions/dim_desc"
+              }, {
+                "description": "A dataset-local dimension.",
                 "type": "object",
                 "properties": {
-                  "description": {
-                    "description": "Definition of this dimension.",
-                    "type": "string"
-                  },
-                  "source": {
-                    "description": "Source (URL) of the definition of this dimension.",
-                    "type": "string",
-                    "format": "uri"
-                  },
-                  "dimension": {
-                    "description": "The URI for this dimension.",
-                    "type": "string",
-                    "format": "uri"
-                  },
-                  "attribute": {
-                    "description": "The URI for this attribute.",
-                    "type": "string",
-                    "format": "uri"
-                  },
-                  "parent": {
-                    "description": "The URI of a parent dimension.",
-                    "type": "string",
-                    "format": "uri"
-                  },
-                  "value": {
-                    "description": "The URI template for values in this column.",
-                    "type": "string",
-                    "format": "uri-template"
-                  },
-                  "unit": {
-                    "description": "The URI of the measurement units for this measure.",
-                    "type": "string",
-                    "format": "uri"
-                  },
-                  "measure": {
-                    "description": "The URI of the measure.",
-                    "type": "string",
-                    "format": "uri"
-                  },
-                  "datatype": {
-                    "description": "The data type for this measure.",
-                    "type": "string",
-                    "enum": ["number", "binary", "datetime", "any", "xml", "html", "json",
-                      "anyAtomicType", "anyURI", "base64Binary", "boolean", "date", "dateTime", "dateTimeStamp",
-                      "decimal", "integer", "long", "int", "short", "byte", "nonNegativeInteger", "positiveInteger",
-                      "unsignedLong", "unsignedInt", "unsignedShort", "unsignedByte", "nonPositiveInteger",
-                      "negativeInteger",
-                      "double", "duration", "dayTimeDuration", "yearMonthDuration", "float",
-                      "gDay", "gMonth", "gYear", "gYearMonth", "hexBinary", "QName",
-                      "string", "normalizedString", "token", "language", "Name", "NMTOKEN", "time"]
-                  }
+                  "label": { "$ref": "#/definitions/dim_label" },
+                  "description": { "$ref": "#/definitions/dim_desc" },
+                  "source": { "$ref": "#/definitions/source" },
+                  "parent": { "$ref": "#/definitions/parent_uri" },
+                  "value": { "$ref": "#/definitions/value" },
+                  "codelist": { "$ref": "#/definitions/codelist" }
                 },
                 "additionalProperties": false
+              }, {
+                "description": "Reference to an existing dimension",
+                "type": "object",
+                "properties": {
+                  "dimension": { "$ref": "#/definitions/dim_uri" },
+                  "value": { "$ref": "#/definitions/value" }
+                },
+                "additionalProperties": false,
+                "required": ["dimension", "value"]
+              }, {
+                "description": "Reference to an existing attribute",
+                "type": "object",
+                "properties": {
+                  "attribute": { "$ref": "#/definitions/attr_uri" },
+                  "value": { "$ref": "#/definitions/value" }
+                },
+                "additionalProperties": false,
+                "required": ["attribute", "value"]
+              }, {
+                "description": "A single measure column",
+                "type": "object",
+                "properties": {
+                  "unit": { "$ref": "#/definitions/unit_uri" },
+                  "measure": { "$ref": "#/definitions/measure_uri" },
+                  "datatype": { "$ref": "#/definitions/datatype" }
+                },
+                "additionalProperties": false,
+                "required": ["measure", "unit"]
               }
             ]
           }
@@ -195,5 +183,76 @@
     }
   },
   "required": ["title", "publisher", "families"],
-  "additionalProperties": false
+  "additionalProperties": false,
+  "definitions": {
+    "source": {
+      "type": "string",
+      "format": "uri",
+      "description": "Source (URL) of the definition of this dimension."
+    },
+    "dim_desc": {
+      "type": "string",
+      "description": "Definition of this dataset-local dimension",
+      "minLength": 1
+    },
+    "dim_label": {
+      "type": "string",
+      "description": "Label for this dataset-local dimension",
+      "minLength": 1
+    },
+    "dim_uri": {
+      "description": "The URI for this dimension.",
+      "type": "string",
+      "format": "uri"
+    },
+    "parent_uri": {
+      "description": "The URI of a parent dimension.",
+      "type": "string",
+      "format": "uri"
+    },
+    "measure_uri": {
+      "description": "The URI of the measure.",
+      "type": "string",
+      "format": "uri"
+    },
+    "unit_uri": {
+      "description": "The URI of the measurement units for this measure.",
+      "type": "string",
+      "format": "uri"
+    },
+    "value": {
+      "description": "The URI template for values in this column.",
+      "type": "string",
+      "format": "uri-template"
+    },
+    "attr_uri": {
+      "description": "The URI for this attribute.",
+      "type": "string",
+      "format": "uri"
+    },
+    "codelist": {
+      "description": "The URI of the codelist or false for no codelist.",
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "uri"
+        }, {
+          "type": "boolean",
+          "const": false
+        }
+      ]
+    },
+    "datatype": {
+      "description": "The data type for this measure.",
+      "type": "string",
+      "enum": ["number", "binary", "datetime", "any", "xml", "html", "json",
+        "anyAtomicType", "anyURI", "base64Binary", "boolean", "date", "dateTime", "dateTimeStamp",
+        "decimal", "integer", "long", "int", "short", "byte", "nonNegativeInteger", "positiveInteger",
+        "unsignedLong", "unsignedInt", "unsignedShort", "unsignedByte", "nonPositiveInteger",
+        "negativeInteger",
+        "double", "duration", "dayTimeDuration", "yearMonthDuration", "float",
+        "gDay", "gMonth", "gYear", "gYearMonth", "hexBinary", "QName",
+        "string", "normalizedString", "token", "language", "Name", "NMTOKEN", "time"]
+    }
+  }
 }
