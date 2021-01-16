@@ -117,45 +117,17 @@
               {
                 "$ref": "#/definitions/dim_desc"
               }, {
-                "description": "A dataset-local dimension.",
-                "type": "object",
-                "properties": {
-                  "label": { "$ref": "#/definitions/dim_label" },
-                  "description": { "$ref": "#/definitions/dim_desc" },
-                  "source": { "$ref": "#/definitions/source" },
-                  "parent": { "$ref": "#/definitions/parent_uri" },
-                  "value": { "$ref": "#/definitions/value" },
-                  "codelist": { "$ref": "#/definitions/codelist" }
-                },
-                "additionalProperties": false
+                "$ref": "#/definitions/dim_local"
               }, {
-                "description": "Reference to an existing dimension",
-                "type": "object",
-                "properties": {
-                  "dimension": { "$ref": "#/definitions/dim_uri" },
-                  "value": { "$ref": "#/definitions/value" }
-                },
-                "additionalProperties": false,
-                "required": ["dimension", "value"]
+                "$ref": "#/definitions/dim_ref"
               }, {
-                "description": "Reference to an existing attribute",
-                "type": "object",
-                "properties": {
-                  "attribute": { "$ref": "#/definitions/attr_uri" },
-                  "value": { "$ref": "#/definitions/value" }
-                },
-                "additionalProperties": false,
-                "required": ["attribute", "value"]
+                "$ref": "#/definitions/attr_ref"
               }, {
-                "description": "A single measure column",
-                "type": "object",
-                "properties": {
-                  "unit": { "$ref": "#/definitions/unit_uri" },
-                  "measure": { "$ref": "#/definitions/measure_uri" },
-                  "datatype": { "$ref": "#/definitions/datatype" }
-                },
-                "additionalProperties": false,
-                "required": ["measure", "unit"]
+                "$ref": "#/definitions/single_measure"
+              }, {
+                "$ref": "#/definitions/measure_type_col"
+              }, {
+                "$ref": "#/definitions/value_of_measure"
               }
             ]
           }
@@ -185,6 +157,70 @@
   "required": ["title", "publisher", "families"],
   "additionalProperties": false,
   "definitions": {
+    "dim_ref": {
+      "description": "Reference to an existing dimension",
+      "type": "object",
+      "properties": {
+        "dimension": { "$ref": "#/definitions/dim_uri" },
+        "value": { "$ref": "#/definitions/value" }
+      },
+      "additionalProperties": false,
+      "required": ["dimension", "value"]
+    },
+    "dim_local": {
+      "description": "A dataset-local dimension.",
+      "type": "object",
+      "properties": {
+        "label": { "$ref": "#/definitions/dim_label" },
+        "description": { "$ref": "#/definitions/dim_desc" },
+        "source": { "$ref": "#/definitions/source" },
+        "parent": { "$ref": "#/definitions/parent_uri" },
+        "value": { "$ref": "#/definitions/value" },
+        "codelist": { "$ref": "#/definitions/codelist" }
+      },
+      "additionalProperties": false
+    },
+    "measure_type_col": {
+      "description": "Measure type column",
+      "type": "object",
+      "properties": {
+        "dimension": { "type": "string", "format": "uri", "const": "http://purl.org/linked-data/cube#measureType" },
+        "value": { "$ref": "#/definitions/value" },
+        "types": { "type": "array", "items":  { "type": "string" } }
+      },
+      "additionalProperties": false,
+      "required": ["dimension", "value"]
+    },
+    "value_of_measure":  {
+      "description": "Value of measure (all measure types)",
+      "type": "object",
+      "properties": {
+        "datatype": { "$ref": "#/definitions/datatype" }
+      },
+      "additionalProperties": false,
+      "required": ["datatype"]
+    },
+    "single_measure": {
+      "description": "A single measure column",
+      "type": "object",
+      "properties": {
+        "unit": { "$ref": "#/definitions/unit_uri" },
+        "measure": { "$ref": "#/definitions/measure_uri" },
+        "datatype": { "$ref": "#/definitions/datatype" }
+      },
+      "additionalProperties": false,
+      "required": ["measure", "unit"]
+    },
+    "attr_ref": {
+      "description": "Reference to an existing attribute",
+      "type": "object",
+      "properties": {
+        "attribute": { "$ref": "#/definitions/attr_uri" },
+        "value": { "$ref": "#/definitions/value" }
+      },
+      "additionalProperties": false,
+      "required": ["attribute", "value"]
+    },
     "source": {
       "type": "string",
       "format": "uri",
