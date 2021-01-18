@@ -161,7 +161,7 @@
       "description": "Reference to an existing dimension",
       "type": "object",
       "properties": {
-        "dimension": { "$ref": "#/definitions/dim_uri" },
+        "dimension": { "$ref": "external.json#/definitions/dim_ext_uri"},
         "value": { "$ref": "#/definitions/value" }
       },
       "additionalProperties": false,
