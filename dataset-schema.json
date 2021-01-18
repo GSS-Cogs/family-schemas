@@ -251,8 +251,7 @@
     },
     "unit_uri": {
       "description": "The URI of the measurement units for this measure.",
-      "type": "string",
-      "format": "uri"
+      "$ref": "external.json#/definitions/unit_ext_uri"
     },
     "value": {
       "description": "The URI template for values in this column.",
@@ -261,8 +260,7 @@
     },
     "attr_uri": {
       "description": "The URI for this attribute.",
-      "type": "string",
-      "format": "uri"
+      "$ref": "external.json#/definitions/attr_ext_uri"
     },
     "codelist": {
       "description": "The URI of the codelist or false for no codelist.",
