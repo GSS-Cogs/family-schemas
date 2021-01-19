@@ -246,8 +246,7 @@
     },
     "measure_uri": {
       "description": "The URI of the measure.",
-      "type": "string",
-      "format": "uri"
+      "$ref": "external.json#/definitions/meas_ext_uri"
     },
     "unit_uri": {
       "description": "The URI of the measurement units for this measure.",
@@ -266,8 +265,7 @@
       "description": "The URI of the codelist or false for no codelist.",
       "oneOf": [
         {
-          "type": "string",
-          "format": "uri"
+          "$ref": "external.json#/definitions/cs_ext_uri"
         }, {
           "type": "boolean",
           "const": false
