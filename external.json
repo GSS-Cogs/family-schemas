@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "http://gss-cogs.github.io/family-schemas/existing-dimensions.json",
+    "$id": "http://gss-cogs.github.io/family-schemas/external.json",
     "definitions": {
         "dim_ext_uri": {
             "$id": "#dim_ext_uri",
