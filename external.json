@@ -286,11 +286,6 @@
                 "http://gss-data.org.uk/data/gss_data/edvp/beis-fuel-poverty-supplementary-tables-2020/hoin-fuelcosts#dimension/income-decile-group",
                 "http://gss-data.org.uk/data/gss_data/edvp/beis-fuel-poverty-supplementary-tables-2020/hoin-housingcosts#dimension/employment-status",
                 "http://gss-data.org.uk/data/gss_data/edvp/beis-fuel-poverty-supplementary-tables-2020/hoin-housingcosts#dimension/income-decile-group",
-                "http://gss-data.org.uk/data/gss_data/trade/ons-exports-of-services-by-country-by-modes-of-supplygss_data/trade/ons-exports-of-services-by-country-by-modes-of-supply#dimension/period",
-                "http://gss-data.org.uk/data/gss_data/trade/ons-exports-of-services-by-country-by-modes-of-supplygss_data/trade/ons-exports-of-services-by-country-by-modes-of-supply#dimension/country",
-                "http://gss-data.org.uk/data/gss_data/trade/ons-exports-of-services-by-country-by-modes-of-supplygss_data/trade/ons-exports-of-services-by-country-by-modes-of-supply#dimension/mode",
-                "http://gss-data.org.uk/data/gss_data/trade/ons-exports-of-services-by-country-by-modes-of-supplygss_data/trade/ons-exports-of-services-by-country-by-modes-of-supply#dimension/direction",
-                "http://gss-data.org.uk/data/gss_data/trade/ons-exports-of-services-by-country-by-modes-of-supplygss_data/trade/ons-exports-of-services-by-country-by-modes-of-supply#dimension/service-account",
                 "http://gss-data.org.uk/data/gss_data/edvp/ofgem-warm-home-discount-scheme/gbpexpenditure#dimension/period",
                 "http://gss-data.org.uk/data/gss_data/edvp/ofgem-warm-home-discount-scheme/gbpexpenditure#dimension/scheme-year",
                 "http://gss-data.org.uk/data/gss_data/edvp/ofgem-warm-home-discount-scheme/gbpexpenditure#dimension/support-element",
@@ -473,6 +468,11 @@
                 "http://gss-data.org.uk/def/trade/property/dimension/alcohol-origin",
                 "http://gss-data.org.uk/def/trade/property/dimension/production-and-clearance",
                 "http://gss-data.org.uk/def/trade/property/dimension/growth",
+                "http://gss-data.org.uk/data/gss_data/trade/ons-exports-of-services-by-country-by-modes-of-supply#dimension/period",
+                "http://gss-data.org.uk/data/gss_data/trade/ons-exports-of-services-by-country-by-modes-of-supply#dimension/country",
+                "http://gss-data.org.uk/data/gss_data/trade/ons-exports-of-services-by-country-by-modes-of-supply#dimension/mode",
+                "http://gss-data.org.uk/data/gss_data/trade/ons-exports-of-services-by-country-by-modes-of-supply#dimension/direction",
+                "http://gss-data.org.uk/data/gss_data/trade/ons-exports-of-services-by-country-by-modes-of-supply#dimension/service-account",
                 "http://gss-data.org.uk/data/gss_data/trade/ons-uk-sa-trade-in-goods#dimension/period",
                 "http://gss-data.org.uk/data/gss_data/trade/ons-uk-sa-trade-in-goods#dimension/ons-partner-geography",
                 "http://gss-data.org.uk/data/gss_data/trade/ons-uk-sa-trade-in-goods#dimension/flow",
@@ -481,6 +481,10 @@
                 "http://gss-data.org.uk/data/gss_data/trade/ons-uk-trade-in-services#dimension/flow",
                 "http://gss-data.org.uk/data/gss_data/trade/ons-uk-trade-in-services#dimension/trade-services",
                 "http://gss-data.org.uk/data/gss_data/trade/ons-uk-trade-in-services#dimension/seasonal-adjustment",
+                "http://gss-data.org.uk/data/gss_data/trade/hmrc-regional-trade-statistics-interactive-analysis#dimension/period",
+                "http://gss-data.org.uk/data/gss_data/trade/hmrc-regional-trade-statistics-interactive-analysis#dimension/country",
+                "http://gss-data.org.uk/data/gss_data/trade/hmrc-regional-trade-statistics-interactive-analysis#dimension/region",
+                "http://gss-data.org.uk/data/gss_data/trade/hmrc-regional-trade-statistics-interactive-analysis#dimension/flow",
                 "http://gss-data.org.uk/data/gss_data/trade/ons_abs#dimension/year",
                 "http://gss-data.org.uk/data/gss_data/trade/ons_abs#dimension/age-of-business",
                 "http://gss-data.org.uk/data/gss_data/trade/ons_abs#dimension/business-activity",
@@ -492,7 +496,21 @@
                 "http://gss-data.org.uk/data/gss_data/sdg/indicators/publicly-accessible-green-space-as-a-proportion-of-urban-area#dimension/country",
                 "http://gss-data.org.uk/data/gss_data/sdg/indicators/proportion-of-children-under-5-years-of-age-whose-births-have-been-registered-with-a-civil-authority-by-age#dimension/period",
                 "http://gss-data.org.uk/data/gss_data/sdg/indicators/publicly-accessible-green-space-as-a-proportion-of-urban-area#dimension/period",
-                "http://gss-data.org.uk/def/trade/property/dimension/trade-services"
+                "http://gss-data.org.uk/def/trade/property/dimension/trade-services",
+                "http://gss-data.org.uk/data/gss_data/trade/ons-international-trade-in-services-by-subnational-areas-of-the-uk#dimension/period",
+                "http://gss-data.org.uk/data/gss_data/trade/ons-international-trade-in-services-by-subnational-areas-of-the-uk#dimension/industry-grouping",
+                "http://gss-data.org.uk/data/gss_data/trade/ons-international-trade-in-services-by-subnational-areas-of-the-uk#dimension/country-or-origin-of-trade",
+                "http://gss-data.org.uk/data/gss_data/trade/ons-international-trade-in-services-by-subnational-areas-of-the-uk#dimension/flow",
+                "http://gss-data.org.uk/data/gss_data/trade/ons-international-trade-in-services-by-subnational-areas-of-the-uk#dimension/travel-type",
+                "http://gss-data.org.uk/data/gss_data/trade/ons-international-trade-in-services-by-subnational-areas-of-the-uk#dimension/includes-travel",
+                "http://gss-data.org.uk/data/gss_data/trade/ons-international-trade-in-services-by-subnational-areas-of-the-uk#dimension/location",
+                "http://gss-data.org.uk/data/gss_data/trade/ons-uk-sa-trade-in-goods#dimension/seasonal-adjustment",
+                "http://gss-data.org.uk/def/trade/property/dimension/industry-section",
+                "http://gss-data.org.uk/data/gss_data/trade/ons-reuk-service#dimension/nuts-geography",
+                "http://gss-data.org.uk/data/gss_data/trade/ons-reuk-service#dimension/year",
+                "http://gss-data.org.uk/data/gss_data/trade/ons-reuk-service#dimension/ons-functional-category",
+                "http://gss-data.org.uk/data/gss_data/trade/ons-reuk-service#dimension/flow-directions",
+                "http://gss-data.org.uk/data/gss_data/trade/hmrc-regional-trade-statistics-interactive-analysis#dimension/method"
             ]
         },
         "attr_ext_uri": {
@@ -644,6 +662,7 @@
                 "http://gss-data.org.uk/def/concept/measurement-units/businesses",
                 "http://gss-data.org.uk/def/concept/measurement-units/gbp-million",
                 "http://gss-data.org.uk/def/concept/measurement-units/gbp",
+                "http://gss-data.org.uk/def/concept/measurement-units/gbp-thousands",
                 "http://gss-data.org.uk/def/concept/measurement-units/percentage",
                 "http://gss-data.org.uk/def/concept/measurement-units/children",
                 "http://gss-data.org.uk/def/concept/measurement-units/standardised-scale",
@@ -661,7 +680,8 @@
                 "http://gss-data.org.uk/def/concept/measurement-units/indicators",
                 "http://gss-data.org.uk/def/concept/measurement-units/households",
                 "http://gss-data.org.uk/def/concept/measurement-units/m2",
-                "http://gss-data.org.uk/def/concept/measurement-units/rating"
+                "http://gss-data.org.uk/def/concept/measurement-units/rating",
+                "http://gss-data.org.uk/def/concept/measurement-units/gbp-billions"
             ]
         },
         "meas_ext_uri": {
@@ -688,16 +708,23 @@
                 "http://gss-data.org.uk/def/measure/median-costs",
                 "http://gss-data.org.uk/def/measure/median-income",
                 "http://gss-data.org.uk/def/measure/proportion",
+                "http://gss-data.org.uk/def/measure/trade",
                 "http://gss-data.org.uk/def/measure/tariff",
                 "http://gss-data.org.uk/def/measure/expenditure",
                 "http://gss-data.org.uk/def/measure/aggregate-fuel-poverty-gap",
                 "http://gss-data.org.uk/def/measure/average-fuel-poverty-gap",
                 "http://gss-data.org.uk/def/measure/median-floor-area",
                 "http://gss-data.org.uk/def/measure/median-rating",
+                "http://gss-data.org.uk/def/trade/measure/gbp-total",
                 "http://gss-data.org.uk/def/measure/exposure",
                 "http://gss-data.org.uk/def/trade/measure/trade-in-services",
                 "http://gss-data.org.uk/def/measure/births",
-                "http://gss-data.org.uk/def/measure/area"
+                "http://gss-data.org.uk/def/measure/area",
+                "http://gss-data.org.uk/def/measure/value-of-imports",
+                "http://gss-data.org.uk/def/measure/average-value-per-exporter",
+                "http://gss-data.org.uk/def/measure/average-value-per-importer",
+                "http://gss-data.org.uk/def/measure/number-of-exporters",
+                "http://gss-data.org.uk/def/measure/value-of-exports"
             ]
         },
         "cs_ext_uri": {
@@ -798,6 +825,7 @@
                 "http://gss-data.org.uk/def/concept-scheme/ons-mode",
                 "http://gss-data.org.uk/def/concept-scheme/ons-service-account",
                 "http://gss-data.org.uk/def/concept-scheme/ons-industry",
+                "http://gss-data.org.uk/def/trade/concept-scheme/",
                 "http://gss-data.org.uk/def/concept-scheme/dcms-country",
                 "http://gss-data.org.uk/data/gss_data/covid-19/nisra-weekly-deaths-year-ni#scheme/cause-of-death",
                 "http://gss-data.org.uk/data/gss_data/covid-19/nisra-weekly-deaths-year-ni#scheme/residential-setting",
@@ -923,10 +951,19 @@
                 "http://gss-data.org.uk/def/trade/concept-scheme/cord-geographies",
                 "http://gss-data.org.uk/def/trade/concept-scheme/hmrc-geographies-wikidata",
                 "http://gss-data.org.uk/def/trade/concept-scheme/pink-book-services",
+                "http://gss-data.org.uk/data/gss_data/trade/hmrc-regional-trade-statistics-interactive-analysis#scheme/country",
+                "http://gss-data.org.uk/data/gss_data/trade/hmrc-regional-trade-statistics-interactive-analysis#scheme/region",
                 "http://gss-data.org.uk/def/trade/concept-scheme/business-activity",
                 "http://gss-data.org.uk/def/trade/concept-scheme/business-ownership",
                 "http://gss-data.org.uk/def/sdg/concept-scheme/country",
-                "http://gss-data.org.uk/def/sdg/concept-scheme/sex"
+                "http://gss-data.org.uk/def/sdg/concept-scheme/sex",
+                "http://gss-data.org.uk/data/gss_data/trade/ons-international-trade-in-services-by-subnational-areas-of-the-uk#scheme/industry-grouping",
+                "http://gss-data.org.uk/data/gss_data/trade/ons-international-trade-in-services-by-subnational-areas-of-the-uk#scheme/country-or-origin-of-trade",
+                "http://gss-data.org.uk/data/gss_data/trade/ons-international-trade-in-services-by-subnational-areas-of-the-uk#scheme/travel-type",
+                "http://gss-data.org.uk/data/gss_data/trade/ons-international-trade-in-services-by-subnational-areas-of-the-uk#scheme/includes-travel",
+                "http://gss-data.org.uk/data/gss_data/trade/ons-international-trade-in-services-by-subnational-areas-of-the-uk#scheme/location",
+                "http://gss-data.org.uk/def/trade/concept-scheme/industry-section",
+                "http://gss-data.org.uk/data/gss_data/trade/hmrc-regional-trade-statistics-interactive-analysis#scheme/method"
             ]
         }
     }
