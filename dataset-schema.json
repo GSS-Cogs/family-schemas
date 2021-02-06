@@ -11,6 +11,10 @@
       "format": "uri",
       "const": "http://gss-cogs.github.io/family-schemas/dataset-schema.json"
     },
+    "id": {
+      "description": "The unique ID for this dataset",
+      "type": "string"
+    },
     "title": {
       "description": "The dataset title",
       "type": "string"
@@ -238,19 +242,19 @@
     },
     "dim_uri": {
       "description": "The URI for this dimension.",
-      "$ref": "external.json#/definitions/dim_ext_uri"
+      "$ref": "http://gss-cogs.github.io/family-schemas/external.json#/definitions/dim_ext_uri"
     },
     "parent_uri": {
       "description": "The URI of a parent dimension.",
-      "$ref": "external.json#/definitions/dim_ext_uri"
+      "$ref": "http://gss-cogs.github.io/family-schemas/external.json#/definitions/dim_ext_uri"
     },
     "measure_uri": {
       "description": "The URI of the measure.",
-      "$ref": "external.json#/definitions/meas_ext_uri"
+      "$ref": "http://gss-cogs.github.io/family-schemas/external.json#/definitions/meas_ext_uri"
     },
     "unit_uri": {
       "description": "The URI of the measurement units for this measure.",
-      "$ref": "external.json#/definitions/unit_ext_uri"
+      "$ref": "http://gss-cogs.github.io/family-schemas/external.json#/definitions/unit_ext_uri"
     },
     "value": {
       "description": "The URI template for values in this column.",
@@ -259,13 +263,13 @@
     },
     "attr_uri": {
       "description": "The URI for this attribute.",
-      "$ref": "external.json#/definitions/attr_ext_uri"
+      "$ref": "http://gss-cogs.github.io/family-schemas/external.json#/definitions/attr_ext_uri"
     },
     "codelist": {
       "description": "The URI of the codelist or false for no codelist.",
       "oneOf": [
         {
-          "$ref": "external.json#/definitions/cs_ext_uri"
+          "$ref": "http://gss-cogs.github.io/family-schemas/external.json#/definitions/cs_ext_uri"
         }, {
           "type": "boolean",
           "const": false
