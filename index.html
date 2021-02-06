@@ -1,10 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Editor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap4 -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- fontawesome5 -->
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.6.1/css/all.css'>
+
+    <!-- JSON-Editor -->
+    <script src="https://cdn.jsdelivr.net/npm/@json-editor/json-editor@latest/dist/jsoneditor.min.js"></script>
+
+    <!-- vanilla picker -->
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-picker@2.10.1/dist/vanilla-picker.min.js" integrity="sha256-3fnRmJ7NTcR4T37E9L7tvEHuRHMGBdvnvlGq2CbRw80=" crossorigin="anonymous"></script>
+    <style type="text/css">
+        body {
+            margin: 1em;
+        }
+
+    </style>
 </head>
 <body>
-$END$
+<div id='editor_holder'></div>
+<script>
+
+    Promise
+        .all([
+            fetch('dataset-schema.json').then(response => response.json()),
+            fetch('external.json').then(response => response.json())
+        ])
+        .then(function([schema, ext]) {
+            const editor = new JSONEditor(document.getElementById('editor_holder'), {
+                theme: "bootstrap4",
+                iconlib: "fontawesome5",
+                schema: schema,
+                ajax: true,
+                ref: {
+                    "http://gss-cogs.github.io/family-schemas/external.json": ext
+                }
+            });
+            let info_json = window.location.search.substring(1);
+            if (info_json !== "") {
+                editor.on('ready', function() {
+                    fetch(info_json)
+                        .then(response => response.json())
+                        .then(data => {
+                            editor.setValue(data);
+                        });
+                });
+            }
+        });
+</script>
 </body>
 </html>
