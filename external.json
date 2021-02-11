@@ -308,7 +308,8 @@
                 "http://gss-data.org.uk/def/measure/average-value-per-importer",
                 "http://gss-data.org.uk/def/measure/number-of-exporters",
                 "http://gss-data.org.uk/def/measure/value-of-exports",
-                "http://gss-data.org.uk/def/measure/exports-of-services"
+                "http://gss-data.org.uk/def/measure/exports-of-services",
+                "http://gss-data.org.uk/def/measure/bop-current-account"
             ]
         },
         "cs_ext_uri": {
@@ -400,9 +401,6 @@
                 "http://data.europa.eu/nuts/scheme/2010",
                 "http://data.europa.eu/nuts/scheme/2016",
                 "http://data.europa.eu/nuts/scheme/2013",
-                "http://gss-data.org.uk/data/gss_data/edvp/ofgem-warm-home-discount-scheme/concept-scheme/scheme-year",
-                "http://gss-data.org.uk/data/gss_data/edvp/ofgem-warm-home-discount-scheme/concept-scheme/support-element",
-                "http://gss-data.org.uk/data/gss_data/edvp/ofgem-warm-home-discount-scheme/concept-scheme/supplier",
                 "http://gss-data.org.uk/data/gss_data/edvp/ofgem-retail-price-comparison-by-company-and-tariff-type-domestic-gb/concept-scheme/tariff",
                 "http://gss-data.org.uk/data/gss_data/edvp/beis-fuel-poverty-supplementary-tables-2020/concept-scheme/housing-sector",
                 "http://gss-data.org.uk/data/gss_data/edvp/beis-fuel-poverty-supplementary-tables-2020/concept-scheme/household-composition",
