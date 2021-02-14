@@ -93,7 +93,8 @@
                 "http://gss-data.org.uk/def/trade/property/dimension/production-and-clearance",
                 "http://gss-data.org.uk/def/trade/property/dimension/growth",
                 "http://gss-data.org.uk/def/trade/property/dimension/trade-services",
-                "http://gss-data.org.uk/def/trade/property/dimension/industry-section"
+                "http://gss-data.org.uk/def/trade/property/dimension/industry-section",
+                "http://gss-data.org.uk/def/edvp/property/dimension/fuel"
             ]
         },
         "attr_ext_uri": {
@@ -246,6 +247,7 @@
                 "http://gss-data.org.uk/def/concept/measurement-units/gbp-million",
                 "http://gss-data.org.uk/def/concept/measurement-units/gbp",
                 "http://gss-data.org.uk/def/concept/measurement-units/gbp-thousands",
+                "http://gss-data.org.uk/def/concept/measurement-units/hectolitres",
                 "http://gss-data.org.uk/def/concept/measurement-units/percentage",
                 "http://gss-data.org.uk/def/concept/measurement-units/children",
                 "http://gss-data.org.uk/def/concept/measurement-units/standardised-scale",
@@ -309,7 +311,8 @@
                 "http://gss-data.org.uk/def/measure/number-of-exporters",
                 "http://gss-data.org.uk/def/measure/value-of-exports",
                 "http://gss-data.org.uk/def/measure/exports-of-services",
-                "http://gss-data.org.uk/def/measure/bop-current-account"
+                "http://gss-data.org.uk/def/measure/bop-current-account",
+                "http://gss-data.org.uk/def/measure/production"
             ]
         },
         "cs_ext_uri": {
@@ -489,7 +492,9 @@
                 "http://gss-data.org.uk/def/trade/concept-scheme/commodity",
                 "http://gss-data.org.uk/def/trade/concept-scheme/high-level-industry-groups",
                 "http://gss-data.org.uk/def/trade/concept-scheme/ons-industries",
-                "http://gss-data.org.uk/def/concept-scheme/age-groups"
+                "http://gss-data.org.uk/def/concept-scheme/age-groups",
+                "http://gss-data.org.uk/def/trade/concept-scheme/bulletin-type",
+                "http://gss-data.org.uk/def/edvp/concept-scheme/fuel"
             ]
         }
     }
