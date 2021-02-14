@@ -119,6 +119,10 @@
             "description": "A column name to component mapping",
             "oneOf": [
               {
+                "description": "Skip this column",
+                "type": "boolean",
+                "const": false
+              }, {
                 "$ref": "#/definitions/dim_desc"
               }, {
                 "$ref": "#/definitions/dim_local"
