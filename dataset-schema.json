@@ -150,6 +150,10 @@
         "publish": {
           "description": "Whether to publish the dataset at the end of the pipeline, defaults to false.",
           "type": "boolean"
+        },
+        "accretiveUpload": {
+          "description": "Whether to upload the dataset to PMD in an accretive/additative fashion. If false or unset, results in the drop-and-replace upload style.",
+          "type": "boolean"
         }
       }
     },
