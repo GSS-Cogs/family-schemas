@@ -94,7 +94,8 @@
                 "http://gss-data.org.uk/def/trade/property/dimension/growth",
                 "http://gss-data.org.uk/def/trade/property/dimension/trade-services",
                 "http://gss-data.org.uk/def/trade/property/dimension/industry-section",
-                "http://gss-data.org.uk/def/edvp/property/dimension/fuel"
+                "http://gss-data.org.uk/def/trade/property/dimension/cdid",
+                "http://gss-data.org.uk/def/energy/property/dimension/fuel"
             ]
         },
         "attr_ext_uri": {
@@ -266,7 +267,8 @@
                 "http://gss-data.org.uk/def/concept/measurement-units/households",
                 "http://gss-data.org.uk/def/concept/measurement-units/m2",
                 "http://gss-data.org.uk/def/concept/measurement-units/rating",
-                "http://gss-data.org.uk/def/concept/measurement-units/gbp-billions"
+                "http://gss-data.org.uk/def/concept/measurement-units/gbp-billions",
+                "http://gss-data.org.uk/def/concept/measurement-units/electric-vehicle-charging-platform"
             ]
         },
         "meas_ext_uri": {
@@ -302,6 +304,7 @@
                 "http://gss-data.org.uk/def/measure/median-rating",
                 "http://gss-data.org.uk/def/trade/measure/gbp-total",
                 "http://gss-data.org.uk/def/measure/exposure",
+                "http://gss-data.org.uk/def/measure/trade-in-goods",
                 "http://gss-data.org.uk/def/trade/measure/trade-in-services",
                 "http://gss-data.org.uk/def/measure/births",
                 "http://gss-data.org.uk/def/measure/area",
@@ -312,7 +315,15 @@
                 "http://gss-data.org.uk/def/measure/value-of-exports",
                 "http://gss-data.org.uk/def/measure/exports-of-services",
                 "http://gss-data.org.uk/def/measure/bop-current-account",
-                "http://gss-data.org.uk/def/measure/production"
+                "http://gss-data.org.uk/def/trade/measure/gdp-from-gva",
+                "http://gss-data.org.uk/def/trade/measure/q-on-q-delta-gdp-from-gva",
+                "http://gss-data.org.uk/def/trade/measure/q-on-last-year-q-delta-gdp-from-gva",
+                "http://gss-data.org.uk/def/trade/measure/y-on-y-delta-gdp-from-gva",
+                "http://gss-data.org.uk/def/measure/production",
+                "http://gss-data.org.uk/def/energy/measure/total-devices",
+                "http://gss-data.org.uk/def/energy/measure/total-devices-per-100-000-population",
+                "http://gss-data.org.uk/def/energy/measure/rapid-devices",
+                "http://gss-data.org.uk/def/energy/measure/rapid-devices-per-100-000-population"
             ]
         },
         "cs_ext_uri": {
@@ -421,6 +432,7 @@
                 "http://gss-data.org.uk/def/trade/concept-scheme/fdi-component",
                 "http://gss-data.org.uk/def/trade/concept-scheme/fdi-industry",
                 "http://gss-data.org.uk/def/trade/concept-scheme/hmrc-industry-groups",
+                "http://gss-data.org.uk/def/trade/concept-scheme/ons-functional-category",
                 "http://gss-data.org.uk/def/trade/concept-scheme/itis-services",
                 "http://gss-data.org.uk/def/trade/concept-scheme/itis-industry",
                 "http://gss-data.org.uk/def/trade/concept-scheme/marker",
@@ -476,7 +488,6 @@
                 "http://gss-data.org.uk/def/trade/concept-scheme/national-accounts-trade-type",
                 "http://gss-data.org.uk/def/trade/concept-scheme/nuts-geographies",
                 "http://gss-data.org.uk/def/trade/concept-scheme/ons-abs-trades",
-                "http://gss-data.org.uk/def/trade/concept-scheme/ons-functional-categories",
                 "http://gss-data.org.uk/def/trade/concept-scheme/ons-partner-geography",
                 "http://gss-data.org.uk/def/trade/concept-scheme/pinkbook-cdid",
                 "http://gss-data.org.uk/def/trade/concept-scheme/sitc4",
@@ -494,7 +505,12 @@
                 "http://gss-data.org.uk/def/trade/concept-scheme/ons-industries",
                 "http://gss-data.org.uk/def/concept-scheme/age-groups",
                 "http://gss-data.org.uk/def/trade/concept-scheme/bulletin-type",
-                "http://gss-data.org.uk/def/edvp/concept-scheme/fuel"
+                "http://gss-data.org.uk/def/trade/concept-scheme/classification-of-products-by-activity",
+                "http://gss-data.org.uk/def/energy/concept-scheme/fuel",
+                "http://gss-data.org.uk/def/energy/concept-scheme/marker",
+                "http://gss-data.org.uk/def/energy/concept-scheme/measurement-units",
+                "http://gss-data.org.uk/def/trade/concept-scheme/cdid",
+                "http://gss-data.org.uk/def/trade/concept-scheme/standard-industrial-classification-2007"
             ]
         }
     }
