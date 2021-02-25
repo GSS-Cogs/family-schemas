@@ -78,7 +78,8 @@
           "description": "The analysis stage of this dataset within the dataset family landscape analysis.",
           "type": "string"
         }
-      }
+      },
+      "additionalProperties": false
     },
     "transform": {
       "description": "Information about the transformation part of the process.",
@@ -141,7 +142,8 @@
           }
         }
       },
-      "required": ["airtable"]
+      "required": ["airtable"],
+      "additionalProperties": false
     },
     "load": {
       "description": "Information about the loading part of the process.",
@@ -155,7 +157,8 @@
           "description": "Whether to upload the dataset to PMD in an accretive/additative fashion. If false or unset, results in the drop-and-replace upload style.",
           "type": "boolean"
         }
-      }
+      },
+      "additionalProperties": false
     },
     "sizingNotes": {
       "description": "Hints about the complexity and size of the dataset",
