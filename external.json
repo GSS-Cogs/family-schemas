@@ -70,7 +70,6 @@
                 "http://gss-data.org.uk/def/trade/property/dimension/service-origin-geography",
                 "http://gss-data.org.uk/def/trade/property/dimension/service-destination-geography",
                 "http://gss-data.org.uk/def/trade/property/dimension/trade-area",
-                "http://gss-data.org.uk/def/trade/property/dimension/mrets-product",
                 "http://gss-data.org.uk/def/trade/property/dimension/hmrc-trade-statistic-type",
                 "http://gss-data.org.uk/def/trade/property/dimension/hmrc-reporter-region",
                 "http://gss-data.org.uk/def/trade/property/dimension/hmrc-partner-geography",
@@ -90,6 +89,7 @@
                 "http://gss-data.org.uk/def/trade/property/dimension/production-and-clearance",
                 "http://gss-data.org.uk/def/trade/property/dimension/growth",
                 "http://gss-data.org.uk/def/trade/property/dimension/trade-services",
+                "http://gss-data.org.uk/def/trade/property/dimension/seasonal-adjustments",
                 "http://gss-data.org.uk/def/trade/property/dimension/industry-section",
                 "http://gss-data.org.uk/def/trade/property/dimension/cdid",
                 "http://gss-data.org.uk/def/trade/property/dimension/commodity",
@@ -98,7 +98,9 @@
                 "http://gss-data.org.uk/def/trade/property/dimension/employment-size-band",
                 "http://gss-data.org.uk/def/trade/property/dimension/ons-industry",
                 "http://gss-data.org.uk/def/trade/property/dimension/country-area",
-                "http://gss-data.org.uk/def/trade/property/dimension/sic-2007"
+                "http://gss-data.org.uk/def/trade/property/dimension/sic-2007",
+                "http://gss-data.org.uk/def/homelessness/property/dimension/sex",
+                "http://gss-data.org.uk/def/homelessness/property/dimension/age"
             ]
         },
         "attr_ext_uri": {
@@ -312,6 +314,7 @@
                 "http://gss-data.org.uk/def/measure/denominators",
                 "http://gss-data.org.uk/def/measure/numerators",
                 "http://gss-data.org.uk/def/measure/scores",
+                "http://gss-data.org.uk/def/measure/gdp",
                 "http://gss-data.org.uk/def/measure/median-costs",
                 "http://gss-data.org.uk/def/measure/median-income",
                 "http://gss-data.org.uk/def/measure/proportion",
@@ -399,7 +402,11 @@
                 "http://gss-data.org.uk/def/trade/measure/secondary-income",
                 "http://gss-data.org.uk/def/trade/measure/capital-account",
                 "http://gss-data.org.uk/def/trade/measure/financial-account",
-                "http://gss-data.org.uk/def/trade/measure/international-investment-position"
+                "http://gss-data.org.uk/def/trade/measure/international-investment-position",
+                "http://gss-data.org.uk/def/measure/na-aggregates",
+                "http://gss-data.org.uk/def/measure/change-in-inventories",
+                "http://gss-data.org.uk/def/measure/hh-final-consumption",
+                "http://gss-data.org.uk/def/measure/gfcf"
             ]
         },
         "cs_ext_uri": {
@@ -504,8 +511,6 @@
                 "http://gss-data.org.uk/def/trade/concept-scheme/investment-direction",
                 "http://gss-data.org.uk/def/trade/concept-scheme/hmrc-industry-groups",
                 "http://gss-data.org.uk/def/trade/concept-scheme/ons-functional-category",
-                "http://gss-data.org.uk/def/trade/concept-scheme/itis-services",
-                "http://gss-data.org.uk/def/trade/concept-scheme/itis-industry",
                 "http://gss-data.org.uk/def/trade/concept-scheme/marker",
                 "http://gss-data.org.uk/def/trade/concept-scheme/product-department",
                 "http://gss-data.org.uk/def/trade/concept-scheme/product-category",
@@ -521,7 +526,6 @@
                 "http://gss-data.org.uk/def/trade/concept-scheme/members",
                 "http://gss-data.org.uk/def/trade/concept-scheme/service-origin-geography",
                 "http://gss-data.org.uk/def/trade/concept-scheme/service-destination-geography",
-                "http://gss-data.org.uk/def/trade/concept-scheme/mrets-product",
                 "http://gss-data.org.uk/def/trade/concept-scheme/hmrc-trade-statistic-type",
                 "http://gss-data.org.uk/def/trade/concept-scheme/hmrc-regions",
                 "http://gss-data.org.uk/def/trade/concept-scheme/cord-sitc",
@@ -535,10 +539,7 @@
                 "http://gss-data.org.uk/def/trade/concept-scheme/alcohol-type",
                 "http://gss-data.org.uk/def/trade/concept-scheme/alcohol-origin",
                 "http://gss-data.org.uk/def/trade/concept-scheme/production-and-clearance",
-                "http://gss-data.org.uk/def/trade/concept-scheme/export-services",
                 "http://gss-data.org.uk/def/trade/concept-scheme/exporter-and-importer-activity",
-                "http://gss-data.org.uk/def/trade/concept-scheme/itis-geographies",
-                "http://gss-data.org.uk/def/trade/concept-scheme/mrets-trade-area",
                 "http://gss-data.org.uk/def/trade/concept-scheme/national-accounts-aggregate",
                 "http://gss-data.org.uk/def/trade/concept-scheme/national-accounts-analysis",
                 "http://gss-data.org.uk/def/trade/concept-scheme/national-accounts-capital-formation",
@@ -562,7 +563,6 @@
                 "http://gss-data.org.uk/def/trade/concept-scheme/sitc4",
                 "http://gss-data.org.uk/def/trade/concept-scheme/trade-group",
                 "http://gss-data.org.uk/def/trade/concept-scheme/cord-geographies-wikidata",
-                "http://gss-data.org.uk/def/trade/concept-scheme/cord-geographies",
                 "http://gss-data.org.uk/def/trade/concept-scheme/hmrc-geographies-wikidata",
                 "http://gss-data.org.uk/def/trade/concept-scheme/pink-book-services",
                 "http://gss-data.org.uk/def/trade/concept-scheme/business-activity",
@@ -591,7 +591,10 @@
                 "http://gss-data.org.uk/def/energy/concept-scheme/nc-sectors",
                 "http://gss-data.org.uk/def/trade/concept-scheme/trade-tariffs",
                 "http://gss-data.org.uk/def/trade/concept-scheme/hmrc-small-area-country-codes",
-                "http://gss-data.org.uk/def/energy/concept-scheme/roc-per-mwh"
+                "http://gss-data.org.uk/def/energy/concept-scheme/roc-per-mwh",
+                "http://gss-data.org.uk/def/concept-scheme/coicop",
+                "http://gss-data.org.uk/def/homelessness/concept-scheme/sex",
+                "http://gss-data.org.uk/def/homelessness/concept-scheme/age"
             ]
         }
     }
