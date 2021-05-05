@@ -30,6 +30,12 @@
       "name": "sort_priority",
       "datatype": "integer",
       "required": false
+    },
+    {
+      "titles": "Description",
+      "name": "description",
+      "datatype": "string",
+      "required": false
     }
   ],
   "primaryKey": "notation"
