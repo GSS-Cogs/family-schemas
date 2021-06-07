@@ -88,19 +88,18 @@
                 "http://gss-data.org.uk/def/trade/property/dimension/alcohol-origin",
                 "http://gss-data.org.uk/def/trade/property/dimension/production-and-clearance",
                 "http://gss-data.org.uk/def/trade/property/dimension/growth",
+                "http://gss-data.org.uk/def/trade/property/dimension/business-activity",
+                "http://gss-data.org.uk/def/trade/property/dimension/trade-group",
+                "http://gss-data.org.uk/def/trade/property/dimension/turnover-size-bands",
                 "http://gss-data.org.uk/def/trade/property/dimension/trade-services",
-                "http://gss-data.org.uk/def/trade/property/dimension/seasonal-adjustments",
                 "http://gss-data.org.uk/def/trade/property/dimension/industry-section",
                 "http://gss-data.org.uk/def/trade/property/dimension/cdid",
                 "http://gss-data.org.uk/def/trade/property/dimension/commodity",
                 "http://gss-data.org.uk/def/trade/property/dimension/bulletin-type",
-                "http://gss-data.org.uk/def/energy/property/dimension/fuel",
                 "http://gss-data.org.uk/def/trade/property/dimension/employment-size-band",
                 "http://gss-data.org.uk/def/trade/property/dimension/ons-industry",
                 "http://gss-data.org.uk/def/trade/property/dimension/country-area",
-                "http://gss-data.org.uk/def/trade/property/dimension/sic-2007",
-                "http://gss-data.org.uk/def/homelessness/property/dimension/sex",
-                "http://gss-data.org.uk/def/homelessness/property/dimension/age"
+                "http://gss-data.org.uk/def/trade/property/dimension/sic-2007"
             ]
         },
         "attr_ext_uri": {
@@ -290,7 +289,16 @@
                 "http://gss-data.org.uk/def/concept/measurement-units/millions-of-tonnes-of-co2-equivalent",
                 "http://gss-data.org.uk/def/concept/measurement-units/local-unit",
                 "http://gss-data.org.uk/def/concept/measurement-units/mw",
-                "http://gss-data.org.uk/def/concept/measurement-units/certificates"
+                "http://gss-data.org.uk/def/concept/measurement-units/certificates",
+                "http://gss-data.org.uk/def/concept/measurement-units/rough-sleepers",
+                "http://gss-data.org.uk/def/concept/measurement-units/additional-beds",
+                "http://gss-data.org.uk/def/concept/measurement-units/emergency-beds",
+                "http://gss-data.org.uk/def/concept/measurement-units/available-emergency-beds",
+                "http://gss-data.org.uk/def/concept/measurement-units/household",
+                "http://gss-data.org.uk/def/concept/measurement-units/prevention-activity",
+                "http://gss-data.org.uk/def/concept/measurement-units/days",
+                "http://gss-data.org.uk/def/concept/measurement-units/placements",
+                "http://gss-data.org.uk/def/concept/measurement-units/applicant"
             ]
         },
         "meas_ext_uri": {
@@ -302,6 +310,7 @@
                 "http://gss-data.org.uk/def/measure/cumulative-count",
                 "http://gss-data.org.uk/def/measure/percent",
                 "http://gss-data.org.uk/def/measure/indicator",
+                "http://gss-data.org.uk/def/measure/percentage",
                 "http://gss-data.org.uk/def/measure/kilowatt",
                 "http://gss-data.org.uk/def/measure/weight",
                 "http://gss-data.org.uk/def/measure/travel-time",
@@ -330,7 +339,6 @@
                 "http://gss-data.org.uk/def/measure/median-rating",
                 "http://gss-data.org.uk/def/trade/measure/gbp-total",
                 "http://gss-data.org.uk/def/trade/measure/net-mass",
-                "http://gss-data.org.uk/def/trade/measure/gbp-million",
                 "http://gss-data.org.uk/def/measure/exposure",
                 "http://gss-data.org.uk/def/measure/trade-in-goods",
                 "http://gss-data.org.uk/def/trade/measure/trade-in-services",
@@ -406,7 +414,17 @@
                 "http://gss-data.org.uk/def/measure/na-aggregates",
                 "http://gss-data.org.uk/def/measure/change-in-inventories",
                 "http://gss-data.org.uk/def/measure/hh-final-consumption",
-                "http://gss-data.org.uk/def/measure/gfcf"
+                "http://gss-data.org.uk/def/measure/gfcf",
+                "http://gss-data.org.uk/def/measure/estimated-count",
+                "http://gss-data.org.uk/def/measure/total",
+                "http://gss-data.org.uk/def/measure/extra-capacity-count",
+                "http://gss-data.org.uk/def/measure/rate-of-approaches-per-1-000-households",
+                "http://gss-data.org.uk/def/measure/unique-approaches",
+                "http://gss-data.org.uk/def/measure/average-time-to-resolve-approach",
+                "http://gss-data.org.uk/def/measure/cumulative-approaches",
+                "http://gss-data.org.uk/def/measure/count-per-1000-population",
+                "http://gss-data.org.uk/def/measure/applications",
+                "http://gss-data.org.uk/def/measure/capacity"
             ]
         },
         "cs_ext_uri": {
@@ -589,12 +607,15 @@
                 "http://gss-data.org.uk/def/concept-scheme/ons-topics",
                 "http://gss-data.org.uk/def/concept-scheme/statistics-authority-themes",
                 "http://gss-data.org.uk/def/energy/concept-scheme/nc-sectors",
-                "http://gss-data.org.uk/def/trade/concept-scheme/trade-tariffs",
                 "http://gss-data.org.uk/def/trade/concept-scheme/hmrc-small-area-country-codes",
                 "http://gss-data.org.uk/def/energy/concept-scheme/roc-per-mwh",
                 "http://gss-data.org.uk/def/concept-scheme/coicop",
                 "http://gss-data.org.uk/def/homelessness/concept-scheme/sex",
-                "http://gss-data.org.uk/def/homelessness/concept-scheme/age"
+                "http://gss-data.org.uk/def/homelessness/concept-scheme/age",
+                "http://gss-data.org.uk/def/homelessness/concept-scheme/notes",
+                "http://gss-data.org.uk/data/soc-2020-extended-framework#dataset",
+                "http://gss-data.org.uk/def/concept-scheme/sdmx_area",
+                "http://data.europa.eu/nuts"
             ]
         }
     }
