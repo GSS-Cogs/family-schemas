@@ -8,21 +8,15 @@
       "required": true
     },
     {
-      "titles": "Notation",
+      "titles": ["Notation", "URI"],
       "name": "notation",
-      "datatype": {
-        "base": "string",
-        "format": "^-?[\\w\\.\\/\\+]+(-[\\w\\.\\/\\+]+)*$"
-      },
+      "datatype": "string",
       "required": true
     },
     {
-      "titles": "Parent Notation",
+      "titles": ["Parent Notation", "Parent URI"],
       "name": "parent_notation",
-      "datatype": {
-        "base": "string",
-        "format": "^(-?[\\w\\.\\/\\+]+(-[\\w\\.\\/\\+]+)*|)$"
-      },
+      "datatype": "string",
       "required": false
     },
     {
