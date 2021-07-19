@@ -5,7 +5,7 @@
       "titles": "Label",
       "name": "label",
       "datatype": "string",
-      "required": true
+      "required": false
     },
     {
       "titles": ["Notation", "URI"],
@@ -28,6 +28,12 @@
     {
       "titles": "Description",
       "name": "description",
+      "datatype": "string",
+      "required": false
+    },
+    {
+      "titles": "Local Notation",
+      "name": "local_notation",
       "datatype": "string",
       "required": false
     }
