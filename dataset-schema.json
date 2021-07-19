@@ -231,10 +231,11 @@
       "type": "object",
       "properties": {
         "attribute": { "$ref": "#/definitions/attr_uri" },
-        "value": { "$ref": "#/definitions/value" }
+        "value": { "$ref": "#/definitions/value" },
+        "datatype": { "$ref": "#/definitions/datatype" }
       },
       "additionalProperties": false,
-      "required": ["attribute", "value"]
+      "required": ["attribute"]
     },
     "source": {
       "type": "string",
