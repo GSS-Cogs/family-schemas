@@ -5,7 +5,7 @@
       "titles": "Label",
       "name": "label",
       "datatype": "string",
-      "required": false
+      "required": true
     },
     {
       "titles": ["Notation", "URI"],
