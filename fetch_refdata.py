@@ -58,7 +58,7 @@ ext_defs['definitions'] = {
         "format": "uri",
         "enum": [
             uri for uri in query_results(
-                'SELECT DISTINCT * { [] <http://purl.org/linked-data/cube#measureType> ?v }')
+                'SELECT DISTINCT * { ?v a <http://purl.org/linked-data/cube#MeasureProperty> }')
             if LOCAL_DEF.search(uri) is None
         ]
     },
