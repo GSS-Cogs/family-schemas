@@ -99,7 +99,17 @@
                 "http://gss-data.org.uk/def/trade/property/dimension/employment-size-band",
                 "http://gss-data.org.uk/def/trade/property/dimension/ons-industry",
                 "http://gss-data.org.uk/def/trade/property/dimension/country-area",
-                "http://gss-data.org.uk/def/trade/property/dimension/sic-2007"
+                "http://gss-data.org.uk/def/trade/property/dimension/sic-2007",
+                "http://gss-data.org.uk/def/climate-change/property/dimension/ghg",
+                "http://gss-data.org.uk/def/climate-change/property/dimension/ghg-grouped",
+                "http://gss-data.org.uk/def/climate-change/property/dimension/ipcc-code",
+                "http://gss-data.org.uk/def/climate-change/property/dimension/national-communication-sector",
+                "http://gss-data.org.uk/def/climate-change/property/dimension/national-communication-category",
+                "http://gss-data.org.uk/def/climate-change/property/dimension/source",
+                "http://gss-data.org.uk/def/climate-change/property/dimension/national-communication-fuel-group",
+                "http://gss-data.org.uk/def/climate-change/property/dimension/national-communication-fuel",
+                "http://gss-data.org.uk/def/climate-change/property/dimension/national-communication-sub-sector",
+                "http://gss-data.org.uk/def/climate-change/property/dimension/activity-name"
             ]
         },
         "attr_ext_uri": {
@@ -267,9 +277,7 @@
                 "http://gss-data.org.uk/def/concept/measurement-units/tonnes",
                 "http://gss-data.org.uk/def/concept/measurement-units/minutes",
                 "http://gss-data.org.uk/def/concept/measurement-units/deprivation",
-                "http://gss-data.org.uk/def/concept/measurement-units/ranks",
                 "http://gss-data.org.uk/def/concept/measurement-units/indices",
-                "http://gss-data.org.uk/def/concept/measurement-units/indicators",
                 "http://gss-data.org.uk/def/concept/measurement-units/households",
                 "http://gss-data.org.uk/def/concept/measurement-units/deflators",
                 "http://gss-data.org.uk/def/concept/measurement-units/m2",
@@ -287,6 +295,7 @@
                 "http://gss-data.org.uk/def/concept/measurement-units/kilowatt",
                 "http://qudt.org/vocab/unit/KiloGM",
                 "http://gss-data.org.uk/def/concept/measurement-units/millions-of-tonnes-of-co2-equivalent",
+                "http://gss-data.org.uk/def/concept/measurement-units/person",
                 "http://gss-data.org.uk/def/concept/measurement-units/local-unit",
                 "http://gss-data.org.uk/def/concept/measurement-units/mw",
                 "http://gss-data.org.uk/def/concept/measurement-units/certificates",
@@ -298,7 +307,13 @@
                 "http://gss-data.org.uk/def/concept/measurement-units/prevention-activity",
                 "http://gss-data.org.uk/def/concept/measurement-units/days",
                 "http://gss-data.org.uk/def/concept/measurement-units/placements",
-                "http://gss-data.org.uk/def/concept/measurement-units/applicant"
+                "http://gss-data.org.uk/def/concept/measurement-units/applicant",
+                "http://gss-data.org.uk/def/concept/measurement-units/score",
+                "http://gss-data.org.uk/def/concept/measurement-units/standardised-ratio",
+                "http://gss-data.org.uk/def/concept/measurement-units/rank",
+                "http://gss-data.org.uk/def/concept/measurement-units/properties",
+                "http://gss-data.org.uk/def/concept/measurement-units/mt-gwp-co2-ar4",
+                "http://gss-data.org.uk/def/concept/measurement-units/thousands"
             ]
         },
         "meas_ext_uri": {
@@ -316,8 +331,6 @@
                 "http://gss-data.org.uk/def/measure/travel-time",
                 "http://gss-data.org.uk/def/measure/ranks",
                 "http://gss-data.org.uk/def/measure/deprivation",
-                "http://gss-data.org.uk/def/measure/mean-consumption",
-                "http://gss-data.org.uk/def/measure/median-consumption",
                 "http://gss-data.org.uk/def/measure/sales",
                 "http://gss-data.org.uk/def/measure/current-prices",
                 "http://gss-data.org.uk/def/measure/denominators",
@@ -345,6 +358,8 @@
                 "http://gss-data.org.uk/def/measure/births",
                 "http://gss-data.org.uk/def/measure/area",
                 "http://gss-data.org.uk/def/measure/value-of-imports",
+                "http://gss-data.org.uk/def/measure/children",
+                "http://gss-data.org.uk/def/measure/families",
                 "http://gss-data.org.uk/def/measure/average-value-per-exporter",
                 "http://gss-data.org.uk/def/measure/average-value-per-importer",
                 "http://gss-data.org.uk/def/measure/number-of-exporters",
@@ -424,7 +439,12 @@
                 "http://gss-data.org.uk/def/measure/cumulative-approaches",
                 "http://gss-data.org.uk/def/measure/count-per-1000-population",
                 "http://gss-data.org.uk/def/measure/applications",
-                "http://gss-data.org.uk/def/measure/capacity"
+                "http://gss-data.org.uk/def/measure/capacity",
+                "http://gss-data.org.uk/def/measure/rate-per-10-000-population",
+                "http://gss-data.org.uk/def/measure/score",
+                "http://gss-data.org.uk/def/measure/standardised-ratio",
+                "http://gss-data.org.uk/def/measure/time",
+                "http://gss-data.org.uk/def/measure/deprivation-rank"
             ]
         },
         "cs_ext_uri": {
@@ -462,18 +482,12 @@
                 "http://gss-data.org.uk/def/concept-scheme/labour-market-age-categories",
                 "http://gss-data.org.uk/def/concept-scheme/employment-centre-size",
                 "http://gss-data.org.uk/def/concept-scheme/mode-of-travel",
-                "http://gss-data.org.uk/data/gss_data/towns-high-streets/sg-scottish-index-of-multiple-deprivation-2020/concept-scheme/deprivation-indicator",
-                "http://gss-data.org.uk/data/gss_data/towns-high-streets/sg-scottish-index-of-multiple-deprivation-2020/concept-scheme/indicator-type",
-                "http://gss-data.org.uk/data/gss_data/towns-high-streets/sg-scottish-index-of-multiple-deprivation-2020/concept-scheme/deprivation-rank",
-                "http://gss-data.org.uk/data/gss_data/towns-high-streets/sg-scottish-index-of-multiple-deprivation-2020/concept-scheme/high-level-domain",
                 "http://gss-data.org.uk/def/concept-scheme/geography-level",
                 "http://gss-data.org.uk/def/concept-scheme/nhs-general-practice-code",
                 "http://gss-data.org.uk/data/gss_data/towns-high-streets/nhs-d-patients-registered-at-a-gp-practice/concept-scheme/age",
                 "http://gss-data.org.uk/def/concept-scheme/nhs-org-type",
                 "http://gss-data.org.uk/def/concept-scheme/nhs-organisation-codes",
                 "http://gss-data.org.uk/def/concept-scheme/primary-care-network-codes",
-                "http://gss-data.org.uk/data/gss_data/towns-high-streets/hmrc-child-benefit-small-area-data/concept-scheme/age",
-                "http://gss-data.org.uk/data/gss_data/towns-high-streets/hmrc-child-benefit-small-area-data/concept-scheme/family-size",
                 "http://gss-data.org.uk/def/concept-scheme/nhs-gp-practices",
                 "http://gss-data.org.uk/data/gss_data/towns-high-streets/smhclg-tracking-economic-and-child-income-deprivation-at-neighbourhood-level-in-England-1999-to-2009/concept-scheme/economic-deprivation-indicator",
                 "http://gss-data.org.uk/def/concept-scheme/flow",
@@ -615,7 +629,16 @@
                 "http://gss-data.org.uk/def/homelessness/concept-scheme/notes",
                 "http://gss-data.org.uk/data/soc-2020-extended-framework#dataset",
                 "http://gss-data.org.uk/def/concept-scheme/sdmx_area",
-                "http://data.europa.eu/nuts"
+                "http://data.europa.eu/nuts",
+                "http://gss-data.org.uk/def/concept-scheme/hierarchical-codelist-sdmx-area",
+                "http://gss-data.org.uk/def/concept-scheme/codelist-geometry",
+                "http://gss-data.org.uk/def/climate-change/concept-scheme/source",
+                "http://gss-data.org.uk/def/climate-change/concept-scheme/ghg",
+                "http://gss-data.org.uk/def/climate-change/concept-scheme/ipcc-code",
+                "http://gss-data.org.uk/def/climate-change/concept-scheme/national-communication-fuel",
+                "http://gss-data.org.uk/def/climate-change/concept-scheme/national-communication-sector",
+                "http://gss-data.org.uk/def/climate-change/concept-scheme/measurement-unit",
+                "http://gss-data.org.uk/def/climate-change/concept-scheme/local-authority"
             ]
         }
     }
