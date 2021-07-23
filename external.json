@@ -109,7 +109,10 @@
                 "http://gss-data.org.uk/def/climate-change/property/dimension/national-communication-fuel-group",
                 "http://gss-data.org.uk/def/climate-change/property/dimension/national-communication-fuel",
                 "http://gss-data.org.uk/def/climate-change/property/dimension/national-communication-sub-sector",
-                "http://gss-data.org.uk/def/climate-change/property/dimension/activity-name"
+                "http://gss-data.org.uk/def/climate-change/property/dimension/activity-name",
+                "http://gss-data.org.uk/def/climate-change/property/dimension/local-authority-code",
+                "http://gss-data.org.uk/def/climate-change/property/dimension/la-co2-sector",
+                "http://gss-data.org.uk/def/climate-change/property/dimension/la-co2-sub-sector"
             ]
         },
         "attr_ext_uri": {
