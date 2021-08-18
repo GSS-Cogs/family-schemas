@@ -316,7 +316,8 @@
                 "http://gss-data.org.uk/def/concept/measurement-units/rank",
                 "http://gss-data.org.uk/def/concept/measurement-units/properties",
                 "http://gss-data.org.uk/def/concept/measurement-units/mt-gwp-co2-ar4",
-                "http://gss-data.org.uk/def/concept/measurement-units/thousands"
+                "http://gss-data.org.uk/def/concept/measurement-units/thousands",
+                "http://gss-data.org.uk/def/climate-change/concept/measurement-unit/millilitres"
             ]
         },
         "meas_ext_uri": {
@@ -506,7 +507,8 @@
                 "http://gss-data.org.uk/def/climate-change/measure/population",
                 "http://gss-data.org.uk/def/climate-change/measure/area",
                 "http://gss-data.org.uk/def/climate-change/measure/la-co2",
-                "http://gss-data.org.uk/def/climate-change/measure/territorial-co2"
+                "http://gss-data.org.uk/def/climate-change/measure/emissions-within-the-scope-of-influence-of-las",
+                "http://gss-data.org.uk/def/climate-change/measure/territorial-emissions"
             ]
         },
         "cs_ext_uri": {
@@ -519,7 +521,6 @@
                 "http://gss-data.org.uk/def/concept-scheme/measurement-units",
                 "http://gss-data.org.uk/def/concept-scheme/cogs-markers",
                 "http://gss-data.org.uk/def/concept-scheme/folders",
-                "http://business.data.gov.uk/companies/def/sic-2007/scheme",
                 "http://purl.org/linked-data/sdmx/2009/concept#cog",
                 "http://purl.org/linked-data/sdmx/2009/code#currency",
                 "http://purl.org/linked-data/sdmx/2009/code#area",
@@ -700,7 +701,9 @@
                 "http://gss-data.org.uk/def/climate-change/concept-scheme/national-communication-fuel",
                 "http://gss-data.org.uk/def/climate-change/concept-scheme/national-communication-sector",
                 "http://gss-data.org.uk/def/climate-change/concept-scheme/measurement-unit",
-                "http://gss-data.org.uk/def/climate-change/concept-scheme/local-authority"
+                "http://gss-data.org.uk/def/climate-change/concept-scheme/local-authority-code",
+                "http://gss-data.org.uk/def/climate-change/concept-scheme/la-co2-sector",
+                "http://gss-data.org.uk/def/climate-change/concept-scheme/la-co2-sub-sector"
             ]
         }
     }
