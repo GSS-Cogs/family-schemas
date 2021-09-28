@@ -96,6 +96,7 @@
                 "http://gss-data.org.uk/def/trade/property/dimension/cdid",
                 "http://gss-data.org.uk/def/trade/property/dimension/commodity",
                 "http://gss-data.org.uk/def/trade/property/dimension/bulletin-type",
+                "http://gss-data.org.uk/def/energy/property/dimension/fuel",
                 "http://gss-data.org.uk/def/trade/property/dimension/employment-size-band",
                 "http://gss-data.org.uk/def/trade/property/dimension/ons-industry",
                 "http://gss-data.org.uk/def/trade/property/dimension/country-area",
@@ -112,7 +113,13 @@
                 "http://gss-data.org.uk/def/climate-change/property/dimension/activity-name",
                 "http://gss-data.org.uk/def/climate-change/property/dimension/local-authority-code",
                 "http://gss-data.org.uk/def/climate-change/property/dimension/la-co2-sector",
-                "http://gss-data.org.uk/def/climate-change/property/dimension/la-co2-sub-sector"
+                "http://gss-data.org.uk/def/climate-change/property/dimension/la-co2-sub-sector",
+                "http://gss-data.org.uk/def/climate-change/property/dimension/section",
+                "http://gss-data.org.uk/def/climate-change/property/dimension/met-office-custom-geography",
+                "http://gss-data.org.uk/def/climate-change/property/dimension/water-body-category",
+                "http://gss-data.org.uk/def/climate-change/property/dimension/series",
+                "http://gss-data.org.uk/def/climate-change/property/dimension/trendline",
+                "http://gss-data.org.uk/def/climate-change/property/dimension/category"
             ]
         },
         "attr_ext_uri": {
@@ -317,7 +324,13 @@
                 "http://gss-data.org.uk/def/concept/measurement-units/properties",
                 "http://gss-data.org.uk/def/concept/measurement-units/mt-gwp-co2-ar4",
                 "http://gss-data.org.uk/def/concept/measurement-units/thousands",
-                "http://gss-data.org.uk/def/climate-change/concept/measurement-unit/millilitres"
+                "http://gss-data.org.uk/def/concept/measurement-units/kt-co2",
+                "http://gss-data.org.uk/def/climate-change/concept/measurement-unit/millimetres",
+                "http://gss-data.org.uk/def/climate-change/concept/measurement-unit/percentage-change",
+                "http://gss-data.org.uk/def/concept/measurement-units/litres-per-person-per-day",
+                "http://gss-data.org.uk/def/concept/measurement-units/megalitres-per-day",
+                "http://gss-data.org.uk/def/concept/measurement-units/percentage-of-water-bodies-assessed",
+                "http://gss-data.org.uk/def/concept/measurement-units/percentage-of-area"
             ]
         },
         "meas_ext_uri": {
@@ -508,7 +521,34 @@
                 "http://gss-data.org.uk/def/climate-change/measure/area",
                 "http://gss-data.org.uk/def/climate-change/measure/la-co2",
                 "http://gss-data.org.uk/def/climate-change/measure/emissions-within-the-scope-of-influence-of-las",
-                "http://gss-data.org.uk/def/climate-change/measure/territorial-emissions"
+                "http://gss-data.org.uk/def/climate-change/measure/territorial-emissions",
+                "http://gss-data.org.uk/def/climate-change/measure/temperature",
+                "http://gss-data.org.uk/def/climate-change/measure/frost",
+                "http://gss-data.org.uk/def/climate-change/measure/surface-ground-water-bodies",
+                "http://gss-data.org.uk/def/measure/energy-consumption",
+                "http://gss-data.org.uk/def/climate-change/measure/distribution-of-pollinators",
+                "http://gss-data.org.uk/def/climate-change/measure/road-passenger-consumption-ktoe",
+                "http://gss-data.org.uk/def/climate-change/measure/output-billion-passenger-kilometres",
+                "http://gss-data.org.uk/def/climate-change/measure/energy-consumption-per-unit-of-output-ktoe",
+                "http://gss-data.org.uk/def/climate-change/measure/total-final-domestic-consumption-ktoe",
+                "http://gss-data.org.uk/def/climate-change/measure/no-households-000s",
+                "http://gss-data.org.uk/def/climate-change/measure/consumption-per-household-ktoe",
+                "http://gss-data.org.uk/def/climate-change/measure/industrial-consumption-ktoe",
+                "http://gss-data.org.uk/def/climate-change/measure/industrial-output",
+                "http://gss-data.org.uk/def/climate-change/measure/consumption-per-unit-of-output-ktoe",
+                "http://gss-data.org.uk/def/climate-change/measure/services-consumption-excluding-agriculture-ktoe",
+                "http://gss-data.org.uk/def/climate-change/measure/services-output",
+                "http://gss-data.org.uk/def/measure/water-leakage",
+                "http://gss-data.org.uk/def/measure/water-consumption",
+                "http://gss-data.org.uk/def/measure/status-of-surface-waters",
+                "http://gss-data.org.uk/def/measure/status-of-ground-waters",
+                "http://gss-data.org.uk/def/measure/status-of-waters-specially-protected-for-specific-uses",
+                "http://gss-data.org.uk/def/climate-change/measure/monthly-summer-days",
+                "http://gss-data.org.uk/def/climate-change/measure/annual-growing-season",
+                "http://gss-data.org.uk/def/climate-change/measure/monthly-maximum-temperature",
+                "http://gss-data.org.uk/def/climate-change/measure/monthly-mean-temperature",
+                "http://gss-data.org.uk/def/climate-change/measure/monthly-minimum-temperature",
+                "http://gss-data.org.uk/def/climate-change/measure/monthly-air-frost"
             ]
         },
         "cs_ext_uri": {
@@ -703,7 +743,11 @@
                 "http://gss-data.org.uk/def/climate-change/concept-scheme/measurement-unit",
                 "http://gss-data.org.uk/def/climate-change/concept-scheme/local-authority-code",
                 "http://gss-data.org.uk/def/climate-change/concept-scheme/la-co2-sector",
-                "http://gss-data.org.uk/def/climate-change/concept-scheme/la-co2-sub-sector"
+                "http://gss-data.org.uk/def/climate-change/concept-scheme/la-co2-sub-sector",
+                "http://gss-data.org.uk/def/climate-change/concept-scheme/water-body-category",
+                "http://gss-data.org.uk/def/climate-change/concept-scheme/defra-category",
+                "http://gss-data.org.uk/def/climate-change/concept-scheme/defra-series",
+                "http://gss-data.org.uk/def/climate-change/concept-scheme/defra-trendline"
             ]
         }
     }
