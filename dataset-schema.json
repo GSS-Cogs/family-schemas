@@ -113,6 +113,12 @@
           },
           "uniqueItems": true
         },
+        "validate": {
+          "description":  "Whether to run CSV-W validation on the outputs. Defaults to true.",
+          "type": "boolean",
+          "required": false,
+          "default": true
+        },
         "columns": {
           "description": "The mapping from column names to data cube components",
           "type": "object",
