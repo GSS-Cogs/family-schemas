@@ -113,6 +113,11 @@
           },
           "uniqueItems": true
         },
+        "validate": {
+          "description":  "Whether to run CSV-W validation on the outputs. Defaults to true.",
+          "type": "boolean",
+          "default": true
+        },
         "columns": {
           "description": "The mapping from column names to data cube components",
           "type": "object",
@@ -339,6 +344,9 @@
                 },
                 "newAttributeValues": {
                   "$ref": "#/definitions/v1.1/new/props/newAttributeValues"
+                },
+                "literalValuesDataType": {
+                  "$ref": "#/definitions/datatype"
                 }
               },
               "additionalProperties": false
@@ -520,6 +528,9 @@
               },
               "isRequired": {
                 "$ref": "#/definitions/v1.1/column/props/attrIsRequired"
+              },
+              "literalValuesDataType": {
+                "$ref": "#/definitions/datatype"
               }
             },
             "additionalProperties": false,
