@@ -213,7 +213,11 @@
   "required": [
     "title",
     "publisher",
-    "families"
+    "families",
+    "id",
+    "landingPage",
+    "description",
+    "published"
   ],
   "additionalProperties": false,
   "definitions": {
