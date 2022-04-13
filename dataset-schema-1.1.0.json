@@ -118,6 +118,11 @@
           "type": "boolean",
           "default": true
         },
+        "csvcubed_uri_style": {
+          "description": "The desired style of URIs for datasets",
+          "type": "string",
+          "enum": ["Standard", "WithoutFileExtensions"]
+        },
         "columns": {
           "description": "The mapping from column names to data cube components",
           "type": "object",
